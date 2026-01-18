@@ -34,7 +34,7 @@ public class ProjectTableContainer extends Container {
     @Override
     public ItemStack slotClick(int slotId, int dragType, ClickType clickTypeIn, EntityPlayer player) {
         if (clickTypeIn == ClickType.QUICK_MOVE) {
-            return null;
+            return ItemStack.EMPTY;
         }
         return super.slotClick(slotId, dragType, clickTypeIn, player);
     }
